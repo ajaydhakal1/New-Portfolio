@@ -16,7 +16,7 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <a href="#" class="logo" style="cursor: pointer;">A J A Y</a>
+      <a href="#" class="logo" style="cursor: pointer">A J A Y</a>
 
       <i class="fa-solid fa-bars" id="menu-icon"></i>
 
@@ -44,10 +44,20 @@
           MySQL & php.
         </p>
         <div class="social-media">
-          <a href="https://www.facebook.com/ajaydkl07" target="_main"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/ajaydkl07/" target="_main"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://github.com/ajaydhakal1" target="_main"><i class="fa-brands fa-github"></i></a>
-          <a href="https://np.linkedin.com/in/a-j-a-y-%E3%82%B7-a5730329b" target="_main"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com/ajaydkl07" target="_main"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com/ajaydkl07/" target="_main"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://github.com/ajaydhakal1" target="_main"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://np.linkedin.com/in/a-j-a-y-%E3%82%B7-a5730329b"
+            target="_main"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
         </div>
         <a href="#contact" class="btn">Contact Me</a>
       </div>
@@ -122,7 +132,8 @@
 
     <!-- Portfolio Section -->
     <section class="portfolio" id="portfolio">
-      <h2 class="heading">Latest <span>Projects</span></h2>
+      <h2 class="heading">My <span>Portfolio</span></h2>
+      <h3 class="subheading">Web <span>Development</span></h3>
 
       <div class="portfolio-container">
         <div class="portfolio-box">
@@ -131,10 +142,9 @@
             <div class="portfolio-layer">
               <h4>Mern Stack Application</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci quis, atque unde, nisi quo dolorum odio quas rem
-                blanditiis harum laboriosam sit architecto recusandae maxime
-                veritatis consectetur eius qui commodi.
+                This is my first MERN Stack project. I built this site while I
+                was learning MERN stack. Basically, React js is used in frontend
+                and mongodb is used for backend in this project.
               </p>
               <i class="fa-solid fa-up-right-from-square"></i>
             </div>
@@ -150,10 +160,8 @@
             <div class="portfolio-layer">
               <h4>Ecommerce Site</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci quis, atque unde, nisi quo dolorum odio quas rem
-                blanditiis harum laboriosam sit architecto recusandae maxime
-                veritatis consectetur eius qui commodi.
+                Ecommerce site made using html and tailwind css. I built this
+                site while I was learning tailwind css.
               </p>
               <i class="fa-solid fa-up-right-from-square"></i>
             </div>
@@ -166,10 +174,8 @@
             <div class="portfolio-layer">
               <h4>Music Player</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci quis, atque unde, nisi quo dolorum odio quas rem
-                blanditiis harum laboriosam sit architecto recusandae maxime
-                veritatis consectetur eius qui commodi.
+                A fully functional music player web app built using
+                JavaScript.(A JavaScript project.)
               </p>
               <i class="fa-solid fa-up-right-from-square"></i>
             </div>
@@ -182,10 +188,8 @@
             <div class="portfolio-layer">
               <h4>College Site</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci quis, atque unde, nisi quo dolorum odio quas rem
-                blanditiis harum laboriosam sit architecto recusandae maxime
-                veritatis consectetur eius qui commodi.
+                Simple college site which I built using HTML and CSS as my +2
+                grade final project. (Not responsive)
               </p>
               <i class="fa-solid fa-up-right-from-square"></i>
             </div>
@@ -198,10 +202,8 @@
             <div class="portfolio-layer">
               <h4>To Do List App</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci quis, atque unde, nisi quo dolorum odio quas rem
-                blanditiis harum laboriosam sit architecto recusandae maxime
-                veritatis consectetur eius qui commodi.
+                Simple To-do-list web app made using next js where you can add
+                and delete the tasks.
               </p>
               <i class="fa-solid fa-up-right-from-square"></i>
             </div>
@@ -213,12 +215,7 @@
             <img src="assets/projects/calculator.png" alt="Calculator" />
             <div class="portfolio-layer">
               <h4>Calculator</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci quis, atque unde, nisi quo dolorum odio quas rem
-                blanditiis harum laboriosam sit architecto recusandae maxime
-                veritatis consectetur eius qui commodi.
-              </p>
+              <p>Fully functional calculator made with react.js.</p>
               <i class="fa-solid fa-up-right-from-square"></i>
             </div>
           </a>
@@ -230,15 +227,15 @@
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me</span></h2>
 
-      <form action="#">
+      <form action="mailto:aajayadhakal@gmail.com">
         <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email Address" required/>
         </div>
 
         <div class="input-box">
-          <input type="number" placeholder="Mobile Number" />
-          <input type="text" placeholder="Email Subject" />
+          <input type="number" placeholder="Mobile Number" required />
+          <input type="text" placeholder="Email Subject" id="emailSubject"/>
         </div>
 
         <textarea
@@ -247,15 +244,25 @@
           cols="30"
           rows="10"
           placeholder="Your Message"
+          required
         ></textarea>
-        <input type="submit" value="Send Message" class="btn" onclick="alert('Message Sent Successfully!')" />
+        
+        <input
+          type="submit"
+          value="Send Message"
+          class="btn"
+          onclick=sendMessage();
+        />
       </form>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-text">
-        <p>Copyright &copy; 2024 by <span>@ajaydhakal</span> | All Rights Reserved.</p>
+        <p>
+          Copyright &copy; 2024 by <span>@ajaydhakal</span> | All Rights
+          Reserved.
+        </p>
       </div>
 
       <div class="footer-iconTop">

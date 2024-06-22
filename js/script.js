@@ -60,3 +60,8 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true,
 });
+
+
+const sendMessage = () => {
+  const name = document.getElementById('name').value;
+}

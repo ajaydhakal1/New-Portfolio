@@ -174,6 +174,16 @@ span {
   font-size: 4.5rem;
 }
 
+.subheading{
+  font-size: 2.6rem;
+  text-align: center;
+  margin: 2.4rem;
+}
+
+.subheading span{
+  color: red;
+}
+
 .about-content h2 {
   text-align: left;
   line-height: 1.2;
@@ -253,6 +263,10 @@ span {
   transition: .2s ease;
 }
 
+.portfolio-box{
+  height: 400px;
+}
+
 .portfolio-box img {
   width: 100%;
   transition: 0.5s ease;
@@ -264,6 +278,7 @@ span {
 }
 
 .portfolio-box:hover img {
+  filter:opacity(60%);
   transform: scale(1.1);
 }
 
@@ -273,6 +288,8 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
+  color: #fff;
+  text-shadow: 4px 4px 6px #000;
   background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
   display: flex;
   justify-content: center;
@@ -291,6 +308,11 @@ span {
 
 .portfolio-layer h4 {
   font-size: 3rem;
+}
+
+.portfolio-layer i{
+  margin-top: 20px;
+  font-size: 25px;
 }
 
 .portfolio-layer p {
@@ -418,6 +440,7 @@ span {
     .footer{
         padding: 2rem 3%;
     }
+
 }
 
 @media (max-width: 768px){
@@ -490,6 +513,9 @@ span {
     .portfolio-container{
         grid-template-columns: repeat(2, 1fr);
     }
+.portfolio-box{
+  height: 310px;
+}
 }
 
 @media(max-width: 617px){
@@ -506,6 +532,7 @@ span {
         width: 100vw;
         margin-top: 4rem;
     }
+    
 }
 
 @media (max-width: 450px){
@@ -516,4 +543,5 @@ span {
     .contact form .input-box input{
         width: 100%;
     }
+    
 }
