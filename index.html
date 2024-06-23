@@ -228,31 +228,34 @@
       <h2 class="heading">Contact <span>Me</span></h2>
 
       <form action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="f5def1cb-9387-40b3-b364-3d46fa0560ca">
+        <input
+          type="hidden"
+          name="access_key"
+          value="f5def1cb-9387-40b3-b364-3d46fa0560ca"
+        />
         <div class="input-box">
-          <input type="text" placeholder="Full Name" required />
-          <input type="email" placeholder="Email Address" required/>
-        </div>
-
-        <div class="input-box">
-          <input type="number" placeholder="Mobile Number" required />
-          <input type="text" placeholder="Email Subject" id="emailSubject"/>
+          <input type="text" placeholder="Full Name" name="name" required />
+          <input
+            type="email"
+            placeholder="Email Address"
+            name="email"
+            required
+          />
         </div>
 
         <textarea
-          name=""
-          id=""
+          name="message"
           cols="30"
           rows="10"
           placeholder="Your Message"
           required
         ></textarea>
-        
+
         <input
           type="submit"
           value="Send Message"
           class="btn"
-          onclick=sendMessage();
+          onclick="sendMessage();"
         />
       </form>
     </section>
